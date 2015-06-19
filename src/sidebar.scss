@@ -5,5 +5,56 @@
 	 ========================================================================== */
 
 .sidebar {
+	@extend .round;
+	@extend .shadow-z1;
+	background: $white;
+	width: 20.8rem;
+}
 
+.sidebar-list {
+	list-style: none;
+	margin: 0;
+}
+
+.sidebar-item {
+	display: block;
+	margin: .2rem 0;
+}
+
+.sidebar-item:first-child {
+	margin-top: 0;
+	padding-top: 1.6rem;
+}
+
+.sidebar-item:last-child {
+	margin-bottom: 0;
+	padding-bottom: 1.6rem;
+}
+
+.sidebar-link {
+	@include anim(all);
+	color: rgba($secondary, .9);
+	display: block;
+	font-size: 1.3rem;
+	padding: .8rem 2rem;
+	text-decoration: none;
+}
+
+.sidebar-link:hover {
+	background: rgba($primary, .05);
+	color: rgba($secondary, .9);
+}
+
+.sidebar-link-selected,
+.sidebar-link-selected:hover {
+	background: rgba($primary, .1);
+	color: $primary;
+}
+
+.sidebar-icon {
+	display: inline-block;
+	margin-right: 1.6rem;
+	vertical-align: middle;
+	color: $primary;
+	width: 1.6rem;
 }
