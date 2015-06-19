@@ -1,2 +1,50 @@
 /* Sidebar
 	 ========================================================================== */
+.sidebar {
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  width: 208px; }
+
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.sidebar-item {
+  display: block;
+  margin: 2px 0; }
+
+.sidebar-item:first-child {
+  margin-top: 0;
+  padding-top: 16px; }
+
+.sidebar-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 16px; }
+
+.sidebar-link {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: rgba(35, 50, 64, 0.9);
+  display: block;
+  font-size: 13px;
+  padding: 8px 20px;
+  text-decoration: none; }
+
+.sidebar-link:hover {
+  background: rgba(28, 109, 226, 0.05);
+  color: rgba(35, 50, 64, 0.9); }
+
+.sidebar-link-selected,
+.sidebar-link-selected:hover {
+  background: rgba(28, 109, 226, 0.1);
+  color: #1c6de2; }
+
+.sidebar-icon {
+  color: #1c6de2;
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: middle;
+  width: 16px; }

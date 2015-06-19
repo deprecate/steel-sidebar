@@ -5,38 +5,39 @@
 	 ========================================================================== */
 
 .sidebar {
-	@extend .round;
-	@extend .shadow-z1;
-	background: $white;
-	width: 20.8rem;
+	background: white;
+	border-radius: $border-radius-small;
+	box-shadow: $shadow-large;
+	width: 208px;
 }
 
 .sidebar-list {
 	list-style: none;
 	margin: 0;
+	padding: 0;
 }
 
 .sidebar-item {
 	display: block;
-	margin: .2rem 0;
+	margin: 2px 0;
 }
 
 .sidebar-item:first-child {
 	margin-top: 0;
-	padding-top: 1.6rem;
+	padding-top: 16px;
 }
 
 .sidebar-item:last-child {
 	margin-bottom: 0;
-	padding-bottom: 1.6rem;
+	padding-bottom: 16px;
 }
 
 .sidebar-link {
 	@include anim(all);
 	color: rgba($secondary, .9);
 	display: block;
-	font-size: 1.3rem;
-	padding: .8rem 2rem;
+	font-size: 13px;
+	padding: 8px 20px;
 	text-decoration: none;
 }
 
@@ -52,9 +53,9 @@
 }
 
 .sidebar-icon {
-	display: inline-block;
-	margin-right: 1.6rem;
-	vertical-align: middle;
 	color: $primary;
-	width: 1.6rem;
+	display: inline-block;
+	margin-right: 16px;
+	vertical-align: middle;
+	width: 16px;
 }
