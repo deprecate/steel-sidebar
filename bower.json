@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "steel-sidebar",
+  "version": "0.0.0",
+  "dependencies": {
+    "steel-bootstrap": "metal/steel-bootstrap#master"
+  }
+}
