@@ -6,3 +6,7 @@ gulp.task('build', function() {
 		.pipe(sass({includePaths: ['bower_components']}))
 		.pipe(gulp.dest('build'));
 });
+
+gulp.task('watch', function() {
+	gulp.watch('src/*.scss', ['build']);
+});
