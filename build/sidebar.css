@@ -2,9 +2,9 @@
 	 ========================================================================== */
 .sidebar {
   background: white;
-  border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
-  width: 208px; }
+  height: 100vh;
+  width: 265px; }
 
 .sidebar-list {
   list-style: none;
@@ -12,39 +12,58 @@
   padding: 0; }
 
 .sidebar-item {
-  display: block;
-  margin: 2px 0; }
-
-.sidebar-item:first-child {
-  margin-top: 0;
-  padding-top: 16px; }
-
-.sidebar-item:last-child {
-  margin-bottom: 0;
-  padding-bottom: 16px; }
+  display: block; }
 
 .sidebar-link {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: rgba(35, 50, 64, 0.9);
   display: block;
-  font-size: 13px;
-  padding: 8px 20px;
   text-decoration: none; }
 
-.sidebar-link:hover {
+.sidebar-link:focus {
+  outline: none; }
+
+/* First level
+   ========================================================================== */
+.sidebar-list-1 .sidebar-link {
+  color: rgba(35, 50, 64, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 8px 0 20px; }
+
+.sidebar-list-1 .sidebar-link:hover,
+.sidebar-list-1 .sidebar-link:focus {
   background: rgba(28, 109, 226, 0.05);
   color: rgba(35, 50, 64, 0.9); }
 
-.sidebar-link-selected,
-.sidebar-link-selected:hover {
-  background: rgba(28, 109, 226, 0.1);
-  color: #1c6de2; }
-
-.sidebar-icon {
+.sidebar-list-1 .sidebar-icon {
   color: #1c6de2;
   display: inline-block;
-  margin-right: 16px;
+  margin-right: 20px;
+  margin-top: -1px;
   vertical-align: middle;
   width: 16px; }
+
+/* Second level
+   ========================================================================== */
+.sidebar-list-2 .sidebar-link {
+  color: rgba(35, 50, 64, 0.9);
+  font-size: 13px;
+  font-weight: 400;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 8px 0 60px; }
+
+.sidebar-list-2 .sidebar-link:hover,
+.sidebar-list-2 .sidebar-link:focus {
+  background: rgba(28, 109, 226, 0.05);
+  color: rgba(35, 50, 64, 0.9); }
+
+.sidebar-list-2 .sidebar-link-selected,
+.sidebar-list-2 .sidebar-link-selected:hover,
+.sidebar-list-2 .sidebar-link-selected:focus {
+  background: rgba(28, 109, 226, 0.1);
+  color: #1c6de2; }
