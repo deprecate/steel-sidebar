@@ -50,12 +50,19 @@
 }
 
 .sidebar-list-1 .sidebar-icon {
-	color: $primary;
+	color: $accent;
 	display: inline-block;
 	margin-right: 20px;
 	margin-top: -1px;
+	text-align: center;
 	vertical-align: middle;
 	width: 16px;
+}
+
+.sidebar-list-1 .sidebar-link-selected,
+.sidebar-list-1 .sidebar-link-selected:hover,
+.sidebar-list-1 .sidebar-link-selected:focus {
+	color: $accent;
 }
 
 /* Second level
