@@ -80,12 +80,11 @@
 .sidebar-list-2 .sidebar-link:hover,
 .sidebar-list-2 .sidebar-link:focus {
 	background: rgba($primary, .05);
-	color: rgba($secondary, .9);
 }
 
 .sidebar-list-2 .sidebar-link-selected,
 .sidebar-list-2 .sidebar-link-selected:hover,
 .sidebar-list-2 .sidebar-link-selected:focus {
-	background: rgba($primary, .1);
-	color: $primary;
+	background: rgba($accent, .1);
+	color: $accent;
 }

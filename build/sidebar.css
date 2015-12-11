@@ -65,11 +65,10 @@
 
 .sidebar-list-2 .sidebar-link:hover,
 .sidebar-list-2 .sidebar-link:focus {
-  background: rgba(14, 20, 26, 0.05);
-  color: rgba(14, 20, 26, 0.9); }
+  background: rgba(14, 20, 26, 0.05); }
 
 .sidebar-list-2 .sidebar-link-selected,
 .sidebar-list-2 .sidebar-link-selected:hover,
 .sidebar-list-2 .sidebar-link-selected:focus {
-  background: rgba(14, 20, 26, 0.1);
-  color: #0e141a; }
+  background: rgba(100, 126, 251, 0.1);
+  color: #647efb; }
